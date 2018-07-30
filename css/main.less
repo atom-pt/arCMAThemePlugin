@@ -1,0 +1,207 @@
+// OpenSans font
+
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url('../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Regular-webfont.eot');
+  src: url('../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Regular-webfont.woff') format('woff'),
+    url('../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Regular-webfont.ttf') format('truetype'),
+    url('../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Semibold';
+  src: url('../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Semibold-webfont.eot');
+  src: url('../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Semibold-webfont.woff') format('woff'),
+    url('../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Semibold-webfont.ttf') format('truetype'),
+    url('../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Semibold-webfont.svg#OpenSansRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Bootstrap v2
+
+@import "../../../vendor/bootstrap/less/reset.less";
+@import "../../arDominionPlugin/css/less/variables";
+@import "../../arDominionPlugin/css/less/loader-bootstrap";
+@import "../../arDominionPlugin/css/less/loader-yui";
+
+// arDominionPlugin
+
+@import "../../arDominionPlugin/css/less/mixins.less";
+@import "../../arDominionPlugin/css/less/scaffolding.less";
+@import "../../arDominionPlugin/css/less/type.less";
+@import "../../arDominionPlugin/css/less/pager.less";
+@import "../../arDominionPlugin/css/less/search.less";
+@import "../../arDominionPlugin/css/less/header.less";
+@import "../../arDominionPlugin/css/less/treeview.less";
+@import "../../arDominionPlugin/css/less/popovers.less";
+@import "../../arDominionPlugin/css/less/description.less";
+@import "../../arDominionPlugin/css/less/import.less";
+@import "../../arDominionPlugin/css/less/forms.less";
+@import "../../arDominionPlugin/css/less/buttons.less";
+@import "../../arDominionPlugin/css/less/legacy.less";
+@import "../../arDominionPlugin/css/less/jobs.less";
+@import "../../arDominionPlugin/css/less/bootstrap-mod.less";
+@import "../../arDominionPlugin/css/less/panels.less";
+
+// Print rules last
+@import "../../arDominionPlugin/css/less/print.less";
+
+
+
+// Local tweaks block
+
+// @green: #d4ff00;
+//
+// body {
+//   background-color: #999;
+// }
+//
+// h1, h2, h3, h5, h6 {
+//   color: #333;
+// }
+//
+//
+
+//
+// .c-btn {
+//  border-color: @green;
+// }
+//
+// a,
+// #browse-menu button,
+// #search-form-wrapper button:before,
+// #top-bar nav button,
+// #top-bar nav button:before,
+// .form-item label {
+//  color: @green;
+// }
+//
+// .top-dropdown-container .top-dropdown-body {
+//  background-color: #333333;
+// }
+
+
+
+body {
+  background-image:url(../../../images/fundo_arquivo_web.jpg);
+}
+
+#site-slogan {
+  background-color: rgb(199, 141, 84); 
+}
+
+#top-bar {
+    background-color: #1c4988;
+}
+
+.top-dropdown, button.top-dropdown:link, button.top-dropdown:visited, button.top-dropdown:active {
+  color: #808080;
+}
+
+#browse-menu button {
+  background-color: #fff;
+}
+
+#search-bar #search-form-wrapper button {
+  background-color: #c78d54
+}
+
+.top-dropdown, button.top-dropdown:link, button.top-dropdown:visited, button.top-dropdown:active {
+  color: #808080;
+}
+
+.top-item {
+  background-color: #FFFFFF;
+}
+
+.fieldset-wrapper,
+ #content {
+ background: fade(#fff, 20%);
+ border: 1px solid #C78D54;
+}
+
+section {
+  background: fade(#fff, 20%);
+  padding-left: 10px;
+}
+
+a {
+    color: #001019;
+}
+
+#search-bar #search-form-wrapper input {
+  color: #a7a5a5;
+}
+
+.search-result .creation-details{
+  color:#fff;
+}
+
+li.reference-code{
+  color: #5f441c
+}
+
+.search-result .result-details {
+  color: #5f441c;
+}
+
+#user-menu>button {
+  margin-left: 12px;
+}
+
+#search-bar #search-form-wrapper input {
+    background-color: #fff;
+}
+
+.span3 {
+    padding-top: 50px;
+}
+
+
+
+
+// Footer Block
+
+// footer {
+//   border-top: 1px solid #d4ff00;
+//   background-color: @grayLighter;
+//   background-image: url('../../arDominionPlugin/images/separator.png');
+//   background-repeat: no-repeat;
+//   background-position: center top;
+//   min-height: 95px;
+//   margin: 40px 0 0 0;
+//   padding: 20px 0;
+//
+//   ul {
+//     list-style: none;
+//     margin: 0;
+//   }
+//
+//   h5 {
+//     text-transform: uppercase;
+//     font-weight: normal;
+//   }
+//
+//   a {
+//     color: @grayLight;
+//     &:hover {
+//       color: @grayDark;
+//     }
+//   }
+//
+//   .row > div:hover h5 {
+//     color: @gray;
+//     text-shadow: 0px 0px 4px @grayLighter;
+//   }
+//
+//   // Powered by
+//   #atom-logo {
+//     margin-top: -4px;
+//     width: 140px;
+//   }
+// }
