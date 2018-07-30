@@ -1,2 +1,0 @@
-# Demo theme
-# arCMAThemePlugin
