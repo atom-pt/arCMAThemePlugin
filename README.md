@@ -1,8 +1,7 @@
 # arCMAThemePlugin
 
 Tema baseado em:
-[sbreker](https://github.com/sbreker/arDemoThemePlugin)
-[ricardodepinho](https://github.com/atom-pt/arMoaThemePlugin)
+[sbreker](https://github.com/sbreker/arDemoThemePlugin) e [ricardodepinho](https://github.com/atom-pt/arMoaThemePlugin)
 
 ## Depois de qulquer alteração é necessário:
   - make
