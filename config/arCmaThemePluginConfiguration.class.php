@@ -11,17 +11,20 @@ class arCmaThemePluginConfiguration extends sfPluginConfiguration
   public function contextLoadFactories(sfEvent $event)
   {
     $context = $event->getSubject();
+    // Define pluginpath for indenpendent theme name location
+    $pluginpath = substr(__DIR__, strpos(__DIR__, "/plugins"));
+    $pluginpath = rtrim($pluginpath, "config");
 
     // Runtime less interpreter will be loaded if debug mode is enabled
     // Remember to avoid localStorage caching when dev machine is not localhost
     if ($context->getConfiguration()->isDebug())
     {
       $context->response->addJavaScript('/vendor/less.js');
-      $context->response->addStylesheet('/plugins/arCmaThemePlugin/css/main.less', 'last', array('rel' => 'stylesheet/less', 'type' => 'text/css', 'media' => 'all'));
+      $context->response->addStylesheet($pluginpath.'css/main.less', 'last', array('rel' => 'stylesheet/less', 'type' => 'text/css', 'media' => 'all'));
     }
     else
     {
-      $context->response->addStylesheet('/plugins/arCmaThemePlugin/css/main.css', 'last', array('media' => 'all'));
+      $context->response->addStylesheet($pluginpath.'css/main.css', 'last', array('media' => 'all'));
     }
   }
 
