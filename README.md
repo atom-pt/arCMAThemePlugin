@@ -3,7 +3,7 @@
 Tema baseado em:
 [sbreker](https://github.com/sbreker/arDemoThemePlugin) e [ricardodepinho](https://github.com/atom-pt/arMoaThemePlugin)
 
-## Depois de qulquer alteração é necessário:
+## Depois de qualquer alteração é necessário:
   - make
   - php /usr/share/nginx/atom/symfony cc
   - systemctl restart php7.0-fpm
